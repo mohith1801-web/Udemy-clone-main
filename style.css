@@ -9,12 +9,16 @@ body {
 
 .navbar {
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
     gap: 15px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
 }
 .navbar__1 a {
     color: #A435F0;
@@ -54,8 +58,25 @@ body {
     gap: 15px;
     align-items: center;
 }
-.navbar__2,.navbar__3:hover{
+.navbar__3:hover{
     cursor: pointer;
+}
+.mylearning{
+    position: relative;
+}
+.mylearning_pop{
+    border: black solid 1px;
+    background-color: whitesmoke;
+    padding: 25px;
+    position: absolute;
+    border: black solid 1px;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning_pop{
+    display: block;
 }
 .catogery {
     display: flex;
@@ -78,6 +99,27 @@ body {
 }
 .bd-img img {
     width: 100%;
+}
+.bd-img{
+    position: relative;
+}
+.bd-img-off{
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    background-color: white;
+    color:black;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    width: fit-content;
+}
+.bd-img-off:hover{
+    background-color: white;
+    color:#5BCA0F;
+    cursor: pointer;
 }
 .recomented{
     padding: 20px;
