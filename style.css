@@ -19,6 +19,7 @@ body {
     top: 0px;
     background-color: white;
     z-index: 1;
+    flex-wrap: wrap;
 }
 .navbar__1 a {
     color: #A435F0;
@@ -40,6 +41,7 @@ body {
     display: flex;
     gap: 15px;
     font-size: 24px;
+    margin-top: 10px;
     align-items: center;
 
 }
@@ -57,6 +59,8 @@ body {
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: flex-end;
+
 }
 .navbar__3:hover{
     cursor: pointer;
@@ -102,6 +106,9 @@ body {
 }
 .bd-img{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bd-img-off{
     position: absolute;
